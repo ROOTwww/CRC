@@ -12,6 +12,9 @@ So stay tuned!
 
 I did designed RC controlled Rover and Drones, few years back at the college. And I want to continue that as a hobby and experiment with new LoRa techs on the side.  
 
+## CLC-01
+
+CLC is for controlling the car remotely over LoRa and designed to be USB powered. I want to make CLCs universal LoRa RC controller but we will see.  
 
 ## TODO
 
