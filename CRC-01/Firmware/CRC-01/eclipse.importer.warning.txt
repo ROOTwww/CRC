@@ -1,0 +1,66 @@
+!!! Warning !!!
+
+There are some incompatible arguments between 'eclipse' and 'eide', you need check and add them to eide project manually !
+
+When you have solved these incompatible problems, you need delete this note file, otherwise this file will be show again !
+
+---
+
+##### Configurations For All Targets #####
+
+//
+///// Target: 'Debug' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <MCU> = STM32F072C8Tx
+            - <CPU> = 0
+            - <Core> = 0
+            - <Board> = genericBoard
+            - "<Defaults> = com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.6 || Debug || true || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || STM32F072C8Tx || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../USB_DEVICE/App | ../USB_DEVICE/Target | ../Drivers/STM32F0xx_HAL_Driver/Inc | ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy | ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc | ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc | ../Drivers/CMSIS/Device/ST/STM32F0xx/Include | ../Drivers/CMSIS/Include ||  ||  || USE_HAL_DRIVER | STM32F072xB ||  || Drivers | Core/Startup | Middlewares | Core | USB_DEVICE ||  ||  || ${workspace_loc:/${ProjName}/STM32F072C8TX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None ||  ||  || "
+            - <Cpu clock frequence> = 48
+            - <undefined> = true
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs:
+            - <Debug level> = com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel.value.g3
+            - <Optimization level> = com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level.value.os
+            - <Debug level> = com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.value.g3
+            - <Optimization level> = undefined
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Debug level> = com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel.value.g3
+        linkerArgs: []
+        linkerLibArgs: []
+
+
+//
+///// Target: 'Release' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <MCU> = STM32F072C8Tx
+            - <CPU> = 0
+            - <Core> = 0
+            - <Board> = genericBoard
+            - "<Defaults> = com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.6 || Release || false || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || STM32F072C8Tx || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../USB_DEVICE/App | ../USB_DEVICE/Target | ../Drivers/STM32F0xx_HAL_Driver/Inc | ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy | ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc | ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc | ../Drivers/CMSIS/Device/ST/STM32F0xx/Include | ../Drivers/CMSIS/Include ||  ||  || USE_HAL_DRIVER | STM32F072xB ||  || Drivers | Core/Startup | Middlewares | Core | USB_DEVICE ||  ||  || ${workspace_loc:/${ProjName}/STM32F072C8TX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None ||  ||  || "
+            - <Cpu clock frequence> = 48
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs:
+            - <Debug level> = com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel.value.g0
+            - <Optimization level> = com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level.value.os
+            - <Debug level> = com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.value.g0
+            - <Optimization level> = com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level.value.os
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Debug level> = com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel.value.g0
+        linkerArgs: []
+        linkerLibArgs: []
+
